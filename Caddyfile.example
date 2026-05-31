@@ -3,8 +3,12 @@
 
 samplesite.joshuapastizzo.com {
 	root * /home/YOUR_USER/repos/235_electric_sample_site
+
+	# Clean URLs: /about -> about/index.html (do not use try_files on / — it can return an empty body)
+	@pages path /about /customers /investors /contact
+	rewrite @pages {path}/index.html
+
 	file_server
-	try_files {path} {path}/ {path}/index.html
 }
 
-# Replace YOUR_USER with your Linux username (~/repos/235_electric_sample_site).
+# Replace YOUR_USER with your Linux username.

@@ -20,7 +20,7 @@ Pages live in folders (`/about`, `/customers`, …) so clean URLs work without `
 
 1. **name.com:** A record host `samplesite` → your home public IP (no underscores in the hostname—required for HTTPS certs).
 2. **Router:** Forward **80** and **443** to the PC running Caddy (same as your existing setup).
-3. **Caddy:** Add the site block from `Caddyfile.example` (update the `root` path if needed).
+3. **Caddy:** Add the site block from `Caddyfile.example` (update the `root` path if needed). Use the `rewrite` + `file_server` pattern—not `try_files` on `/`, which can cause a blank page.
 4. Reload Caddy. Links use root paths (`/about`, `/css/...`)—correct for a subdomain.
 
 Main site `joshuapastizzo.com` can stay on Vercel; only `samplesite.joshuapastizzo.com` points home.
