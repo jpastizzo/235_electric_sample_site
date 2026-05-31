@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a1628">
+  <title>Contact | 235 Electric</title>
+  <meta name="description" content="Contact 235 Electric for product, partnership, and investor inquiries.">
+  <link rel="canonical" href="https://sample_site.joshuapastizzo.com/contact">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Sora:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/images/logo.svg" type="image/svg+xml">
+</head>
+<body class="page-inner page-contact">
+  <header class="site-header">
+    <div class="container">
+      <div class="logo"><a href="/"><img src="/images/logo.svg" alt="235 Electric"></a></div>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+      <nav>
+        <ul class="nav-main">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/customers">Customers</a></li>
+          <li><a href="/investors">Investors</a></li>
+          <li class="nav-cta"><a href="/contact" class="btn btn-nav" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container page-hero">
+      <span class="label">Get in touch</span>
+      <h1>Contact</h1>
+      <p class="lead">Product, partnership, or investment inquiries—send a message and we’ll respond promptly.</p>
+    </div>
+
+    <section class="section section--tight">
+      <div class="container contact-layout">
+        <div class="contact-details">
+          <span class="label">Office</span>
+          <h2 class="section-title">Wilmington, DE</h2>
+          <address>
+            235 Electric<br>
+            1209 Orange St<br>
+            Wilmington, DE 19801<br>
+            United States
+          </address>
+          <p><a href="mailto:tamas@235electric.com">tamas@235electric.com</a></p>
+        </div>
+        <div class="contact-panel">
+          <span class="label">Message</span>
+          <h2 class="section-title">Send a note</h2>
+          <form action="https://formsubmit.co/tamas@235electric.com" method="POST" class="contact-form">
+            <input type="hidden" name="_subject" value="235 Electric website inquiry">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Product, partnership, investment…">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p><span class="footer-mark">235 Electric</span> · © 2026</p>
+      <p><a href="/contact">Contact</a></p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# Copy to your Caddy config and adjust the root path.
+# DNS: A record "sample_site" -> your public IP (name.com)
+# Router: forward 80 and 443 to this machine (same as existing Caddy).
+
+sample_site.joshuapastizzo.com {
+	root * C:\Users\Josh\Desktop\repos\website_contract_test
+	file_server
+	try_files {path} {path}/ {path}/index.html
+}
