@@ -8,6 +8,9 @@ samplesite.joshuapastizzo.com {
 	@pages path /about /customers /investors /contact
 	rewrite @pages {path}/index.html
 
+	@css path *.css
+	header @css Cache-Control "no-cache"
+
 	file_server
 }
 
