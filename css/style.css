@@ -1,4 +1,4 @@
-/* 235 Electric — navy + white from Logo.png */
+/* 235 Electric: navy + white from Logo.png */
 :root {
   --color-bg: #f4f6f8;
   --color-surface: #ffffff;
@@ -66,7 +66,7 @@ a:hover {
   padding: 0 var(--space-md);
 }
 
-/* Header — navy to match logo mark */
+/* Header: navy to match logo mark */
 .site-header {
   background: var(--color-ink);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -156,7 +156,7 @@ a:hover {
   box-shadow: none;
 }
 
-/* Hero — split layout, not centered gradient block */
+/* Hero: split layout, not centered gradient block */
 .hero {
   background: var(--color-ink);
   color: #fff;
@@ -416,7 +416,7 @@ a:hover {
   padding-top: var(--space-md);
 }
 
-/* Notice / pullquote — not EASI-style bordered banner */
+/* Notice / pullquote: not EASI-style bordered banner */
 .notice {
   padding: var(--space-md) 0 var(--space-md) var(--space-md);
   border-left: 3px solid var(--color-accent);
@@ -451,7 +451,7 @@ a:hover {
   color: var(--color-ink-soft);
 }
 
-/* Metrics row — not floating stat cards */
+/* Metrics row: not floating stat cards */
 .metric-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -500,7 +500,7 @@ a:hover {
   }
 }
 
-/* Pillars — flat list, not numbered hover cards */
+/* Pillars: flat list, not numbered hover cards */
 .pillar-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -536,7 +536,7 @@ a:hover {
   }
 }
 
-/* Tiles — bordered, no shadow lift */
+/* Tiles: bordered, no shadow lift */
 .tile-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -988,7 +988,7 @@ a:hover {
   resize: vertical;
 }
 
-/* Footer — light bar, not inverted navy slab */
+/* Footer: light bar, not inverted navy slab */
 .site-footer {
   background: var(--color-surface);
   border-top: 1px solid var(--color-border);
