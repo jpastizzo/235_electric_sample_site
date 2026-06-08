@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0a1628">
+  <meta name="theme-color" content="#05223d">
   <title>About | 235 Electric</title>
   <meta name="description" content="235 Electric is building radioisotope generators for data centers in the 1–100 kW power range.">
   <link rel="canonical" href="https://samplesite.joshuapastizzo.com/about">
@@ -11,12 +11,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Sora:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="icon" href="/images/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="/images/Logo.png" type="image/png">
 </head>
 <body class="page-inner">
   <header class="site-header">
     <div class="container">
-      <div class="logo"><a href="/"><img src="/images/logo.svg" alt="235 Electric"></a></div>
+      <div class="logo"><a href="/"><img src="/images/Logo.png" alt="235 Electric"></a></div>
       <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">Menu</button>
       <nav>
         <ul class="nav-main">
@@ -31,10 +31,10 @@
   </header>
 
   <main>
-    <div class="container page-hero">
+    <div class="container page-hero page-hero--compact">
       <span class="label">Company</span>
       <h1>About 235 Electric</h1>
-      <p class="lead">Radioisotope generators for the world’s most demanding compute infrastructure.</p>
+      <p class="lead">Radioisotope generators for the world's most demanding compute infrastructure.</p>
     </div>
 
     <section class="section section--tight">
@@ -55,7 +55,7 @@
       <div class="container">
         <span class="label">Partners</span>
         <h2 class="section-title">Audiences we serve</h2>
-        <div class="tile-grid">
+        <div class="tile-grid tile-grid--quad">
           <article class="tile">
             <h3>Data center customers</h3>
             <p>Operators and colocation providers who need dense, dependable power for AI and high-performance compute — on-grid and off-grid.</p>
@@ -66,7 +66,11 @@
           </article>
           <article class="tile">
             <h3>Nuclear suppliers</h3>
-            <p>Reactor operators and isotope producers who enable Co-60 supply — relationships built on safety culture and long operational horizons.</p>
+            <p>Reactor operators and isotope producers we are engaging to secure Co-60 supply for our generator cores—relationships grounded in safety culture and long operational horizons.</p>
+          </article>
+          <article class="tile">
+            <h3>Engineering suppliers</h3>
+            <p>Machine shops, fabrication partners, and engineering suppliers with aerospace-grade manufacturing and assembly capabilities to support generator production.</p>
           </article>
         </div>
       </div>
@@ -74,19 +78,33 @@
 
     <section class="section section--tight section--band">
       <div class="container">
+        <span class="label">Science</span>
+        <h2 class="section-title">Underlying technology</h2>
+        <div class="tile-grid">
+          <article class="tile">
+            <h3>Co-60 isotope advantage</h3>
+            <p>We leverage Co-60 decay rather than fission. Passive decay is simpler to manage, safer, and lacks weaponization risks. Its 5.7-year half-life aligns with standard 5-year GPU replacement cycles.</p>
+          </article>
+          <article class="tile">
+            <h3>High-efficiency TPV</h3>
+            <p>Thermophotovoltaic cells operate like solar cells in infrared, absorbing radiant heat directly into electrical current—with 40% efficiency via specialized back-surface reflectors.</p>
+          </article>
+          <article class="tile">
+            <h3>Stable regulation</h3>
+            <p>Controlled under established industrial regulatory categories—not military constraints. Our generators use commercially supplied capsules as an integrated power source, not as a standalone isotope product.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
         <span class="label">Brand</span>
         <h2 class="section-title">How we communicate</h2>
         <div class="notice">
           <p>We emphasize <strong>safety, reliability, and compliance</strong> in public materials so customers, suppliers, and government stakeholders see a conservative, engineering-led company—not hype or hazard-warning symbolism.</p>
         </div>
         <p>Our visual language uses electron orbitals and infrastructure cues, not trefoils or toxicity iconography associated with danger in technical contexts.</p>
-      </div>
-    </section>
-
-    <section class="section section--tight">
-      <div class="container page-actions">
-        <a href="/customers" class="btn btn-primary">Product &amp; technology</a>
-        <a href="/contact" class="btn btn-outline">Contact us</a>
       </div>
     </section>
   </main>

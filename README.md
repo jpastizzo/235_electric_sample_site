@@ -10,8 +10,8 @@ Static site built from the layout and patterns in the [EASI reference site](../w
 |------|------|----------------|
 | Home | `index.html` | Landing; summarizes value prop and links to SoW pages |
 | About | `about/index.html` | Company building radioisotope generators for data centers, 1–100 kW |
-| Customers | `customers/index.html` | Co-60 + TPV technology, product advantages, product visuals |
-| Investors | `investors/index.html` | Comparison table, deployment/scalability, fixed OPEX narrative |
+| Customers | `customers/index.html` | Co-60 + TPV technology, product advantages, comparison, deployment, economics |
+| Investors | `investors/index.html` | Brief intro + downloadable seed investor deck (PDF) |
 | Contact | `contact/index.html` | Form → `tamas@235electric.com`, Wilmington address |
 
 Pages live in folders (`/about`, `/customers`, …) so clean URLs work without `.html`. Use a local server (below)—opening `index.html` directly in the browser will not resolve `/about` paths.
@@ -25,9 +25,14 @@ Pages live in folders (`/about`, `/customers`, …) so clean URLs work without `
 
 Main site `joshuapastizzo.com` can stay on Vercel; only `samplesite.joshuapastizzo.com` points home.
 
-## SoW items not in this repo
+## Assets
 
-- **RTG brief images** — Product diagram on Customers is a placeholder; add assets under `images/` when available.
+- **Logo** — `images/Logo.png` (navy `#05223d` + white)
+- **Generator** — `images/RTG.png`, `images/RTG2.png`
+- **Capsule** — `images/Cap1.png`, `images/Cap2.png`, `images/Cap3.png`
+- **Investor deck** — `assets/235-electric-seed-investor-deck.pdf` (linked from Investors page)
+
+## SoW items not in this repo
 - **LinkedIn** — One-liner, cover image, and sample posts are separate from this site. Suggested tagline from SoW: *“Nuclear generators that provide quiet, clean energy for data centers.”*
 
 ## Contact form
@@ -45,4 +50,4 @@ Open `http://localhost:8000` (clean URLs like `/about` still need Caddy or simil
 
 ## Brand colors
 
-Edit `:root` in `css/style.css` — ink `#0a1628`, accent teal `#0d9488`.
+Edit `:root` in `css/style.css` — navy `#05223d` (from logo), white accents on dark surfaces.

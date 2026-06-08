@@ -1,15 +1,16 @@
-/* 235 Electric — clean minimal, distinct from reference institute site */
+/* 235 Electric — navy + white from Logo.png */
 :root {
-  --color-bg: #f5f7fa;
+  --color-bg: #f4f6f8;
   --color-surface: #ffffff;
-  --color-ink: #0a1628;
-  --color-ink-soft: #1e3a5f;
-  --color-muted: #5a6b7d;
-  --color-border: #dde3eb;
-  --color-band: #eceff4;
-  --color-accent: #0d9488;
-  --color-accent-dark: #0f766e;
-  --color-accent-glow: rgba(13, 148, 136, 0.12);
+  --color-ink: #05223d;
+  --color-ink-soft: #0a3358;
+  --color-muted: #4a6278;
+  --color-border: #d4dce6;
+  --color-band: #e8edf2;
+  --color-accent: #05223d;
+  --color-accent-dark: #031a2e;
+  --color-accent-glow: rgba(5, 34, 61, 0.08);
+  --color-accent-light: rgba(255, 255, 255, 0.85);
   --font-display: "Sora", system-ui, sans-serif;
   --font-body: "IBM Plex Sans", system-ui, sans-serif;
   --max-width: 68rem;
@@ -65,10 +66,10 @@ a:hover {
   padding: 0 var(--space-md);
 }
 
-/* Header */
+/* Header — navy to match logo mark */
 .site-header {
-  background: var(--color-surface);
-  border-bottom: 1px solid var(--color-border);
+  background: var(--color-ink);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -84,19 +85,19 @@ a:hover {
 }
 
 .logo img {
-  height: 64px;
+  height: 56px;
   width: auto;
-  max-width: min(280px, 55vw);
+  max-width: min(72px, 18vw);
 }
 
 .nav-toggle {
   display: none;
   background: none;
-  border: 1px solid var(--color-border);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: var(--radius-btn);
   padding: 0.4rem 0.75rem;
   cursor: pointer;
-  color: var(--color-ink);
+  color: #fff;
   font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: 500;
@@ -118,19 +119,19 @@ a:hover {
   padding: 0.45rem 0.85rem;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--color-muted);
+  color: rgba(255, 255, 255, 0.72);
   border-radius: var(--radius-btn);
 }
 
 .nav-main a:hover {
-  color: var(--color-ink);
-  background: var(--color-band);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .nav-main a[aria-current="page"] {
-  color: var(--color-ink);
-  background: var(--color-accent-glow);
-  box-shadow: inset 0 -2px 0 var(--color-accent);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 -2px 0 #fff;
 }
 
 .nav-cta {
@@ -140,18 +141,18 @@ a:hover {
 .btn-nav {
   padding: 0.45rem 1rem;
   font-size: 0.85rem;
-  background: var(--color-ink);
-  color: #fff !important;
+  background: #fff;
+  color: var(--color-ink) !important;
   border-radius: var(--radius-btn);
 }
 
 .btn-nav:hover {
-  background: var(--color-ink-soft);
-  color: #fff !important;
+  background: var(--color-accent-light);
+  color: var(--color-ink) !important;
 }
 
 .nav-main .btn-nav[aria-current="page"] {
-  background: var(--color-accent);
+  background: #fff;
   box-shadow: none;
 }
 
@@ -195,7 +196,7 @@ a:hover {
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #5eead4;
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: var(--space-sm);
 }
 
@@ -296,12 +297,21 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--color-accent);
+  background: var(--color-ink);
   color: #fff;
 }
 .btn-primary:hover {
-  background: var(--color-accent-dark);
+  background: var(--color-ink-soft);
   color: #fff;
+}
+
+.hero .btn-primary {
+  background: #fff;
+  color: var(--color-ink);
+}
+.hero .btn-primary:hover {
+  background: var(--color-accent-light);
+  color: var(--color-ink);
 }
 
 .btn-secondary {
@@ -393,6 +403,19 @@ a:hover {
   font-size: 1.05rem;
 }
 
+.page-hero--compact {
+  padding-bottom: var(--space-sm);
+  margin-bottom: 0;
+}
+
+.page-hero--compact .lead {
+  max-width: none;
+}
+
+.page-hero--compact + .section--tight {
+  padding-top: var(--space-md);
+}
+
 /* Notice / pullquote — not EASI-style bordered banner */
 .notice {
   padding: var(--space-md) 0 var(--space-md) var(--space-md);
@@ -425,7 +448,7 @@ a:hover {
 
 .pullquote em {
   font-style: normal;
-  color: var(--color-accent-dark);
+  color: var(--color-ink-soft);
 }
 
 /* Metrics row — not floating stat cards */
@@ -520,6 +543,10 @@ a:hover {
   gap: 1px;
   background: var(--color-border);
   border: 1px solid var(--color-border);
+}
+
+.tile-grid--quad {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .tile {
@@ -779,10 +806,10 @@ a:hover {
 }
 
 .comparison-table thead th.col-product {
-  background: var(--color-accent-dark);
+  background: var(--color-ink-soft);
   color: #fff;
-  border-bottom: 3px solid #5eead4;
-  box-shadow: inset 4px 0 0 #5eead4;
+  border-bottom: 3px solid #fff;
+  box-shadow: inset 4px 0 0 rgba(255, 255, 255, 0.5);
 }
 
 .comparison-table thead th.col-product strong {
@@ -806,7 +833,7 @@ a:hover {
 
 .comparison-table tbody .col-product {
   background: var(--color-accent-glow);
-  border-left: 4px solid var(--color-accent);
+  border-left: 4px solid var(--color-ink);
   font-weight: 500;
   color: var(--color-ink);
 }
@@ -873,6 +900,20 @@ a:hover {
   flex-wrap: wrap;
   gap: var(--space-sm);
   margin-top: var(--space-lg);
+}
+
+.page-actions--center {
+  justify-content: center;
+}
+
+.page-inner main > .section:last-child,
+.page-home main > .section:last-child {
+  padding-bottom: var(--space-sm);
+}
+
+.page-inner .site-footer,
+.page-home .site-footer {
+  margin-top: var(--space-md);
 }
 
 .prose ul {
@@ -988,6 +1029,126 @@ a:hover {
   padding: var(--space-lg) 0;
 }
 
+/* Product imagery */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+.image-grid--single {
+  grid-template-columns: 1fr;
+}
+
+.product-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.product-image {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  padding: var(--space-md);
+}
+
+.product-image__frame {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  background: var(--color-bg);
+}
+
+.product-image__frame img {
+  width: 100%;
+  height: auto;
+  max-height: 360px;
+  object-fit: contain;
+}
+
+.product-image figcaption {
+  width: 100%;
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  text-align: center;
+  line-height: 1.4;
+}
+
+.capsule-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.capsule-gallery__item,
+.capsule-gallery__spec {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  padding: var(--space-md);
+}
+
+.capsule-gallery__spec {
+  grid-column: 1 / -1;
+}
+
+.capsule-gallery__frame {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  background: var(--color-bg);
+}
+
+.capsule-gallery__frame img {
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: contain;
+}
+
+.capsule-gallery__frame--wide img {
+  max-height: 480px;
+}
+
+.capsule-gallery figcaption {
+  width: 100%;
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  text-align: center;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .image-grid,
+  .product-image-grid,
+  .capsule-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 .page-header {
   padding: var(--space-lg) 0 var(--space-md);
   border-bottom: 1px solid var(--color-border);
@@ -1039,9 +1200,9 @@ a:hover {
     flex-direction: column;
     align-items: stretch;
     padding: var(--space-sm);
-    background: var(--color-surface);
-    border-bottom: 1px solid var(--color-border);
-    box-shadow: 0 8px 24px rgba(10, 22, 40, 0.08);
+    background: var(--color-ink);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 24px rgba(5, 34, 61, 0.25);
   }
 
   .nav-main.is-open {
@@ -1063,6 +1224,10 @@ a:hover {
   .stat-item:nth-child(1),
   .stat-item:nth-child(2) {
     border-bottom: 1px solid var(--color-border);
+  }
+
+  .tile-grid--quad {
+    grid-template-columns: 1fr;
   }
 }
 
